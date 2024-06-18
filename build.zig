@@ -2,7 +2,7 @@ const std = @import("std");
 
 pub fn build(b: *std.Build) void {
     const kbg = b.addStaticLibrary(.{
-        .name = "libkbg",
+        .name = "kbg",
         .target = b.host,
         .optimize = .ReleaseSafe,
         .version = .{ .major = 0, .minor = 1, .patch = 0 },
